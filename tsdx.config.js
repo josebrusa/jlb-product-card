@@ -6,6 +6,11 @@ module.exports = {
       postcss({ modules: true }),
       images({ incude: ['**/*.png', '**/*.jpg'] }),
       ...config.plugins,
+      replace({
+        preventAssignment: true,
+        'process.browser': true,
+        'process.env.NODE_ENV': JSON.stringify(mode),
+      }),
     ];
     return config;
   },
