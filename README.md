@@ -13,6 +13,14 @@ import { ProductButton, ProductCard, ProductImage, ProductTitle} from "jlb-produ
 ```
 
 ```
+const product = {
+  id: '1',
+  title: 'coffe mug - Card',
+  img: './coffee-mug.png',
+};
+```
+
+```
 <ProductCard
     product={product}
     initialValues = {{ count: 0, maxCount: 10 }}>
