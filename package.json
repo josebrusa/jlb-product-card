@@ -13,7 +13,7 @@
   },
   "homepage": "https://dev-josebrusa.vercel.app",
   "engines": {
-    "node": ">=18"
+    "node": ">=10"
   },
   "scripts": {
     "start": "tsdx watch",
@@ -26,7 +26,7 @@
     "analyze": "size-limit --why"
   },
   "peerDependencies": {
-    "react": ">=18"
+    "react": ">=16"
   },
   "husky": {
     "hooks": {
