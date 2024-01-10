@@ -10,7 +10,7 @@ describe('ProductTitle', () => {
     const wrapper = renderer.create(
       <ProductTitle title={product.title} className={styleClass.className} />
     );
-    console.log(wrapper.toJSON());
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
